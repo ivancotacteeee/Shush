@@ -23,8 +23,15 @@
   },
   "homepage": "https://github.com/ivancotacteeee/Shush#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "nodemon": "^3.1.14",
+    "moment-timezone": "^0.6.2",
+    "mongodb": "^7.2.0",
+    "uuid": "^14.0.0",
     "ytmusic-api": "^5.3.1"
+  },
+  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "nodemon": "^3.1.14"
   }
 }

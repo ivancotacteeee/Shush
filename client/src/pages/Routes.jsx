@@ -1,12 +1,18 @@
 import { RouterProvider, createBrowserRouter } from "react-router"
 import NotFound from "@/pages/errors/not-found/page"
 
-import TestPage from "@/pages/user/page"
+import InboxPage from "@/pages/user/inbox"
+import SenderPage from "@/pages/user/sender";
+import LoginPage from "@/pages/user/login";
+import RegisterPage from "@/pages/user/register";
 
 const Routes = () => {
     const routesForPublic = [
         { path: "*", element: <NotFound /> },
-        { path: "/test", element: <TestPage /> }
+        { path: "/inbox", element: <InboxPage /> },
+        { path: "/sender", element: <SenderPage /> },
+        { path: "/login", element: <LoginPage /> },
+        { path: "/register", element: <RegisterPage /> }
     ];
 
     const router = createBrowserRouter([
